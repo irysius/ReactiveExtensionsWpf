@@ -1,0 +1,55 @@
+﻿<Window x:Class="ReactiveExtensionsWpf.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		Title="MainWindow" Height="350" Width="525">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto"/>
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<Button x:Name="btnSubscribe" Click="btnSubscribe_Click" MaxWidth="200" HorizontalAlignment="Left" Padding="12, 5, 12, 5" Margin="3">Begin Subscription</Button>
+		<Grid Grid.Row="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="auto"/>
+				<RowDefinition />
+				<RowDefinition Height="auto"/>
+				<RowDefinition />
+				<RowDefinition Height="auto"/>
+				<RowDefinition />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Grid.Resources>
+				<Style TargetType="TextBox">
+					<Setter Property="Margin" Value="3, 3, 3, 15" />
+					<Setter Property="Height" Value="auto" />
+				</Style>
+				<Style TargetType="Label">
+					<Setter Property="HorizontalAlignment" Value="Center" />
+					<Setter Property="Margin" Value="3" />
+				</Style>
+			</Grid.Resources>
+			<TextBox x:Name="txtCounter1" IsReadOnly="True" Grid.Row="1"></TextBox>
+			<TextBox x:Name="txtCounter2" IsReadOnly="True" Grid.Row="3"></TextBox>
+			<TextBox x:Name="txtCounter3" IsReadOnly="True" Grid.Row="5"></TextBox>
+			<TextBox x:Name="txtCounter4" IsReadOnly="True" Grid.Column="1" Grid.Row="1"></TextBox>
+			<TextBox x:Name="txtCounter5" IsReadOnly="True" Grid.Column="1" Grid.Row="3"></TextBox>
+			<TextBox x:Name="txtCounter6" IsReadOnly="True" Grid.Column="1" Grid.Row="5"></TextBox>
+			<TextBox x:Name="txtCounter7" IsReadOnly="True" Grid.Column="2" Grid.Row="1"></TextBox>
+			<TextBox x:Name="txtCounter8" IsReadOnly="True" Grid.Column="2" Grid.Row="3"></TextBox>
+			<TextBox x:Name="txtCounter9" IsReadOnly="True" Grid.Column="2" Grid.Row="5"></TextBox>
+			<Label x:Name="lblCounter1">Counter 1</Label>
+			<Label x:Name="lblCounter2" Grid.Row="2">Counter 2</Label>
+			<Label x:Name="lblCounter3" Grid.Row="4">Counter 3</Label>
+			<Label x:Name="lblCounter4" Grid.Column="1">Counter 4</Label>
+			<Label x:Name="lblCounter5" Grid.Column="1" Grid.Row="2">Counter 5</Label>
+			<Label x:Name="lblCounter6" Grid.Column="1" Grid.Row="4">Counter 6</Label>
+			<Label x:Name="lblCounter7" Grid.Column="2">Counter 7</Label>
+			<Label x:Name="lblCounter8" Grid.Column="2" Grid.Row="2">Counter 8</Label>
+			<Label x:Name="lblCounter9" Grid.Column="2" Grid.Row="4">Counter 9</Label>
+		</Grid>
+	</Grid>
+</Window>
